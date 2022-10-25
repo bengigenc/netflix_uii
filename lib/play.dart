@@ -227,18 +227,25 @@ class _NetflixPlayState extends State<NetflixPlay> {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            Divider(
+            
+            // ignore: prefer_const_literals_to_create_immutables
+            Stack( 
+              children: [
+            Container(margin: EdgeInsets.only(top: 13),
+              child: Divider(
+                color: Color(0xff4E4B4B),
+                thickness: 2,
+                height: 0,
+              ),
+            ),        Divider(
               color: Color(0xffE32727),
               thickness: 5,
               height: 20,
               indent: 11,
               endIndent: 259,
-            ),
-            Divider(
-              color: Color(0xff4E4B4B),
-              thickness: 2,
-              height: 0,
-            ),
+            ),],),
+
+            
             Container(
               margin: EdgeInsets.only(top: 40,right: 10,
               left: 10),
